@@ -1,0 +1,29 @@
+<mat-toolbar id="header" class="navbar">
+  <div id="Title">UPSHIP
+  </div>
+  <div >
+    <span>
+      <a id="joe" [routerLink]="['/voyages']">Les Voyages</a>
+    </span>
+    <span>
+        <a id="joe" [routerLink]="['/voyages']">Comment ca marche</a>
+      </span>  
+    <span>
+      <a id="joe"  (click)="onSignOut()" [routerLink]="['/auth/signin']" *ngIf="isAuth">Déconnexion</a>
+    </span> 
+    <span>
+      <a id="joe" [routerLink]="['/auth/signin']" *ngIf="!isAuth">Connexion</a>
+    </span>
+    
+    <span>
+      <a  [routerLink]="['/profile']" *ngIf="isAuth">Tableau de bord</a>
+    </span>
+     
+  </div>
+</mat-toolbar>
+
+
+
+
+
+

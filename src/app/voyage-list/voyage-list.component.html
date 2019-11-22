@@ -1,0 +1,97 @@
+<a href="https://icons8.com/icon/42936/paper-plane"></a>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<div class="row">
+        <div  class="col-xs-12">
+          <button id ="jombotron" mat-raised-button color="primary" (click)="onNewVoyage()">Annoncer un Voyage</button>
+        </div>
+</div>
+
+
+<div class="mat-grid-list"  style="margin-top: 20px" [style.overflow]="'auto'" [style.height.px]="'300'">
+    <mat-grid cols="1" rowHeight="120px"  gutterSize="10px">
+        <mat-grid
+            *ngFor="let voyage of voyages; let i = index" (click)="onViewVoyage(voyage.id)">
+            <mat-card class="jumbo" fxFlex="33" id="jiggy">
+              <img height="33" width="33"src="https://img.icons8.com/dotty/100/000000/suitcase.png">
+              <mat-card-content >
+                {{voyage.voyage.Depart}}-->{{voyage.voyage.Destination}}
+              </mat-card-content>
+              <mat-card-footer>
+                  {{voyage.voyage.prixparkilo}}
+              </mat-card-footer>
+
+            </mat-card>
+        </mat-grid>
+      </mat-gridt>
+</div>
+
+<div id="section" >
+  <h1 id="text1">Comment ça marche</h1>
+  <h3>Upship met en relation les convoyeurs et les particuliers ayant des paquets qui se rendent dans la même direction. </h3>
+  <mat-grid-list  id="lasection"cols="2" rowHeight="120px"  gutterSize="10px">
+    <mat-grid-tile id="tilea">
+      <mat-card id="carte">
+        <img class = "md-card-image" height="99" width="99"src="https://img.icons8.com/doodle/96/000000/group.png">
+        <mat-card-content id="Adja">
+          <h3>Particuliers</h3>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile id="tileb">
+        <mat-card id="carte">
+          <img id="image" src="https://img.icons8.com/doodle/96/000000/group.png">
+          <mat-card-content id="Adja">
+            <h3>Convoyeurs</h3>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+
+  </mat-grid-list>
+
+</div>
+<div id="section2"style="margin-top: 50px" >
+  <mat-grid-list cols=4 rowHeight="30px"  gutterSize="10px">
+    <mat-grid-tile>
+      <a id="joe" [routerLink]="['/voyages']">Inscription</a>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <a id="joe" [routerLink]="['/voyages']">Comment ça marche</a>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <a id="joe" [routerLink]="['/voyages']">Étudiants</a>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <a id="joe" [routerLink]="['/voyages']">Instagram</a>
+          </mat-grid-tile>
+          <mat-grid-tile>
+              <a id="joe" [routerLink]="['/voyages']">Se connecter</a>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <a id="joe" [routerLink]="['/voyages']">Convoyeur</a>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                  <a id="joe" [routerLink]="['/voyages']">Pour entreprises</a>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <a id="joe" [routerLink]="['/voyages']">Facebook</a>
+                  </mat-grid-tile>
+                  <mat-grid-tile>
+                      <a id="joe" [routerLink]="['/voyages']">Emplacement</a>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <a id="joe" [routerLink]="['/voyages']">Shipper</a>
+                      </mat-grid-tile>
+                      <mat-grid-tile>
+                          <a id="joe" [routerLink]="['/voyages']">Évenements et festivals</a>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <a id="joe" [routerLink]="['/voyages']">Youtube</a>
+                          </mat-grid-tile>
+                          <mat-grid-tile>
+                              <a id="joe" [routerLink]="['/voyages']">À propos</a>
+                            </mat-grid-tile>
+                            <mat-grid-tile>
+                                <a id="joe" [routerLink]="['/voyages']">Aide</a>
+                              </mat-grid-tile>
+  </mat-grid-list>
+</div>

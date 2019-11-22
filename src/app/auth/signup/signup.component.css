@@ -1,0 +1,44 @@
+#zigzag{
+    width: 100%!important;
+    height: 333px!important;
+} 
+#email {
+    top: 0;
+    border-radius: 50px;
+    width: 35%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; 
+    
+} 
+#password {
+    border-radius: 50px;
+    width: 35%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; 
+
+}
+#username {
+    top: 50px;
+    border-radius: 50px;
+    width: 35%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; 
+    
+} 
+#joko{
+    border-radius: 50px;
+    width: 100%;
+    margin: 0 auto; /* Added */
+    float: unset; /* Added */
+    margin-bottom: 33px; 
+}
+#buttonCreerCompte{
+    border-radius: 50px;
+    width: 15%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 33px; 
+} 

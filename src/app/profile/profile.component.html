@@ -1,0 +1,53 @@
+<div id="leprofile" class="card bg-light">
+    <div class="card-body" style="padding-top: 1;">
+        <div id="profile" class="form-group">
+                <img src="https://img.icons8.com/dusk/128/000000/anonymous-mask.png"> 
+
+        </div>
+        <ul id="infosUser">
+
+        </ul>
+    </div>
+</div>
+<div id="leprofile"class="card bg-dark">
+    <h3>Liste de vos voyages</h3>
+        <div class="card-body" style="padding-top: 1;">
+            <div id="profile" class="form-group">
+                    <img src="https://img.icons8.com/clouds/100/000000/sent.png">
+            </div>
+            <div class="col-xs-12" style="padding-top: 1;">
+                    <div class="list-group">
+                        <button
+                          class="card bg-dark"
+                          *ngFor="let voyage of voyages; let i = index"
+                          (click)="onViewVoyage(voyage.id)">
+                          <div class="card-body">
+                              Trajet: {{voyage.voyage.Depart}}-->{{voyage.voyage.Destination}}
+                          </div>
+                        </button>
+                      </div>
+                </div>
+        </div>
+</div>
+<div id="leprofile" class="card bg-dark">
+        <h3>Liste de vos Réservations</h3>
+            <div class="card-body" style="padding-top: 1;">
+                <div id="profile" class="form-group">
+                        <img src="https://img.icons8.com/clouds/100/000000/sent.png">
+                </div>
+                <div class="col-xs-12" style="padding-top: 1;">
+                        <div class="list-group">
+                            <button
+                              class="card bg-dark"
+                              *ngFor="let voyage of voyages; let i = index"
+                              (click)="onViewVoyage(voyage.id)">
+                              <div class="card-body">
+                                  Trajet: {{voyage.voyage.Depart}}-->{{voyage.voyage.Destination}}
+                              </div>
+                            </button>
+                          </div>
+                    </div>
+            </div>
+    </div>
+    <button mat-fab >Basic</button>
+

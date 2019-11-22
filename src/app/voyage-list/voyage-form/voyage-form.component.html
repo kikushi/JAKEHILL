@@ -1,0 +1,75 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
+<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+      <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"> -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css"> 
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker-standalone.css"> 
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>  
+<div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h2>Enregistrer un voyage</h2>
+          <form [formGroup]="voyageForm" (ngSubmit)="onSaveVoyage()">
+            
+            <div class="form-group">
+              <label for="author">Auteur</label>
+              <input type="text" id="author"
+                     class="form-control" formControlName="author">
+            </div>
+            <div class="form-group">
+                <label for="numero">Numero</label>
+                <input type="tel" id="numero"
+                       class="form-control" formControlName="numero">
+              </div>
+              
+            
+            <div class="form-group">
+              <label for="Depart">Depart</label>
+              <input type="text" id="depart"
+                     class="form-control" formControlName="depart">
+            </div>
+            <div class="form-group">
+                <label for="Date">Date</label>
+                
+                  <input type="date" id="datedepart"
+                  class="form-control" formControlName="datedepart">
+              
+            </div>
+          
+          <div class="form-group">
+            <label for="Destination">Destination</label>
+            <input type="text" id="destination"
+                   class="form-control" formControlName="destination">
+          </div>
+          
+       
+            <div class="form-group">
+              <label for="poidsdisponible">Poids Disponible</label>
+              <textarea id="poidsdisponible"
+                        class="form-control" formControlName="poidsdisponible">
+              </textarea>
+            </div>
+            
+            <button class="btn btn-success" [disabled]="voyageForm.invalid"
+                    type="submit">Enregistrer
+            </button>
+      
+          </form>
+        </div>
+      </div>
+      

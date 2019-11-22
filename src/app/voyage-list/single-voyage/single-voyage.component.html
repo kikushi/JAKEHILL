@@ -1,0 +1,29 @@
+
+      <div id="levoyage" class="card bg-light">
+          <div id="image">
+            <img  src="https://img.icons8.com/dusk/64/000000/paper-plane.png"> Date de Départ: {{voyage?.datedepart}}
+          </div>
+        
+          <div class="card-body" style="padding-top: 1;">
+            <div id="argent2">
+                <img src="https://img.icons8.com/bubbles/50/000000/money-bag.png">Contribution:{{voyage?.prixparkilo}}
+            </div>
+            <div>
+            </div>
+            <div id="depart">
+                <img src="https://img.icons8.com/color/48/000000/marker.png"> Départ: {{voyage?.Depart}}
+            </div>
+            <div id="destination">
+                <img src="https://img.icons8.com/color/48/000000/marker.png"> Destination: {{voyage?.Destination}}
+            </div>
+            <div id="poiddispo">
+                <img src="https://img.icons8.com/dusk/64/000000/package.png"> Poids Disponible: {{voyage?.poidsdisponible}} Kg
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            
+      
+        </div>
+        <button  id ="reserver" class="btn btn-primary" (click)="reserver()">Réserver</button>
+  

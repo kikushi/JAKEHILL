@@ -1,0 +1,36 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<div class="card bg-light">
+  <h3 style="text-align: center;"> Connexion</h3>
+  <img class="card-img-top" id= "zigzag" src="https://image.flaticon.com/icons/svg/843/843280.svg" alt="Card image">
+  <div class="card-body" style="padding-top: 1;"> 
+      <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input type="text"
+                 id="email"
+                 class="form-control"
+                 placeholder="email"
+                 formControlName="email">
+        </div>
+        <div class="form-group">
+          
+          <input type="password"
+                 id="password"
+                 class="form-control"
+                 placeholder="password"
+                 formControlName="password">
+        </div>
+        <div id="buttonConnexion">
+            <button class="btn btn-primary"
+            id="joko"
+            type="submit"
+            [disabled]="signInForm.invalid">Connexion</button>
+
+        </div>
+        
+      </form>
+      <p class="text-danger">{{ errorMessage }}</p>
+
+  </div>
+</div>
+      

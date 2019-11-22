@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<div class="card bg-light">
+    <h3 style="text-align: center;"> Créer un compte</h3>
+    <img class="card-img-top" id= "zigzag" src="https://image.flaticon.com/icons/svg/843/843280.svg" alt="Card image">
+    <div class="card-body" style="padding-top: 1;">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              
+                <input type="text"
+                       id="username"
+                       placeholder="username"
+                       class="form-control"
+                       formControlName="username">
+              </div>
+            <div class="form-group">
+              
+              <input type="text"
+                     id="email"
+                     placeholder="email"
+                     class="form-control"
+                     formControlName="email">
+            </div>
+            <div class="form-group">
+              
+              <input type="password"
+                     id="password"
+                     placeholder="password"
+                     class="form-control"
+                     formControlName="password">
+            </div>
+            <div id="buttonCreerCompte">
+                <button class="btn btn-primary"
+                type="submit"
+                id="joko"
+                [disabled]="signupForm.invalid">Enregistrer</button>
+            </div>
+            
+          </form>
+    </div>
+    
+</div>
