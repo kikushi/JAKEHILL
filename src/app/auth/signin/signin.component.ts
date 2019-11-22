@@ -21,6 +21,8 @@ export class SigninComponent implements OnInit {
     this.initForm();
   }
 
+
+
   initForm() {
     this.signInForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
@@ -31,9 +33,9 @@ export class SigninComponent implements OnInit {
   onSubmit() {
     const email = this.signInForm.get('email').value;
     const password = this.signInForm.get('password').value;
-     
-    
-    
+
+
+
     this.authService.signInUser(email, password).then(
       () => {
         this.router.navigate(['/voyages']);
